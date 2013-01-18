@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		65D6129D16A825FD00792062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6129C16A825FD00792062 /* Foundation.framework */; };
-		65D612A216A825FD00792062 /* PAPeek.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65D612A116A825FD00792062 /* PAPeek.h */; };
-		65D612A416A825FD00792062 /* PAPeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D612A316A825FD00792062 /* PAPeek.m */; };
 		65D612AC16A825FD00792062 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D612AB16A825FD00792062 /* SenTestingKit.framework */; };
 		65D612AE16A825FD00792062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D612AD16A825FD00792062 /* UIKit.framework */; };
 		65D612AF16A825FD00792062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6129C16A825FD00792062 /* Foundation.framework */; };
 		65D612B216A825FD00792062 /* libPAPeek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6129916A825FD00792062 /* libPAPeek.a */; };
 		65D612B816A825FD00792062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D612B616A825FD00792062 /* InfoPlist.strings */; };
 		65D612BB16A825FD00792062 /* PAPeekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D612BA16A825FD00792062 /* PAPeekTests.m */; };
+		65D612EF16A8329F00792062 /* PAPeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D612EE16A8329F00792062 /* PAPeek.m */; };
+		FB76156134A54714808136FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BEFA39EC0A483D86F68A1E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +35,16 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				65D612A216A825FD00792062 /* PAPeek.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		14BEFA39EC0A483D86F68A1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D6129916A825FD00792062 /* libPAPeek.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPAPeek.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		65D6129C16A825FD00792062 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65D6129C16A825FD00792062 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D612A016A825FD00792062 /* PAPeek-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PAPeek-Prefix.pch"; sourceTree = "<group>"; };
-		65D612A116A825FD00792062 /* PAPeek.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAPeek.h; sourceTree = "<group>"; };
-		65D612A316A825FD00792062 /* PAPeek.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAPeek.m; sourceTree = "<group>"; };
 		65D612AA16A825FD00792062 /* PAPeekTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAPeekTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D612AB16A825FD00792062 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		65D612AD16A825FD00792062 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,6 +52,10 @@
 		65D612B716A825FD00792062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65D612B916A825FD00792062 /* PAPeekTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAPeekTests.h; sourceTree = "<group>"; };
 		65D612BA16A825FD00792062 /* PAPeekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAPeekTests.m; sourceTree = "<group>"; };
+		65D612C416A827CF00792062 /* PAPeek.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PAPeek.podspec; sourceTree = "<group>"; };
+		65D612ED16A8329F00792062 /* PAPeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPeek.h; sourceTree = "<group>"; };
+		65D612EE16A8329F00792062 /* PAPeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPeek.m; sourceTree = "<group>"; };
+		D15BCD08FA4E4C91B61CB709 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D6129D16A825FD00792062 /* Foundation.framework in Frameworks */,
+				FB76156134A54714808136FE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +85,12 @@
 		65D6128E16A825FD00792062 = {
 			isa = PBXGroup;
 			children = (
-				65D6129E16A825FD00792062 /* PAPeek */,
+				65D612C416A827CF00792062 /* PAPeek.podspec */,
+				65D6129E16A825FD00792062 /* Classes */,
 				65D612B316A825FD00792062 /* PAPeekTests */,
 				65D6129B16A825FD00792062 /* Frameworks */,
 				65D6129A16A825FD00792062 /* Products */,
+				D15BCD08FA4E4C91B61CB709 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,18 +109,19 @@
 				65D6129C16A825FD00792062 /* Foundation.framework */,
 				65D612AB16A825FD00792062 /* SenTestingKit.framework */,
 				65D612AD16A825FD00792062 /* UIKit.framework */,
+				14BEFA39EC0A483D86F68A1E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		65D6129E16A825FD00792062 /* PAPeek */ = {
+		65D6129E16A825FD00792062 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				65D612A116A825FD00792062 /* PAPeek.h */,
-				65D612A316A825FD00792062 /* PAPeek.m */,
+				65D612ED16A8329F00792062 /* PAPeek.h */,
+				65D612EE16A8329F00792062 /* PAPeek.m */,
 				65D6129F16A825FD00792062 /* Supporting Files */,
 			);
-			path = PAPeek;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		65D6129F16A825FD00792062 /* Supporting Files */ = {
@@ -155,6 +161,7 @@
 				65D6129516A825FD00792062 /* Sources */,
 				65D6129616A825FD00792062 /* Frameworks */,
 				65D6129716A825FD00792062 /* CopyFiles */,
+				C500B9755E924928A93B3B5F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +243,20 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		C500B9755E924928A93B3B5F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -243,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D612A416A825FD00792062 /* PAPeek.m in Sources */,
+				65D612EF16A8329F00792062 /* PAPeek.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +347,7 @@
 		};
 		65D612BF16A825FD00792062 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15BCD08FA4E4C91B61CB709 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/PAPeek.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -338,6 +360,7 @@
 		};
 		65D612C016A825FD00792062 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15BCD08FA4E4C91B61CB709 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/PAPeek.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -397,6 +420,7 @@
 				65D612C016A825FD00792062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65D612C116A825FD00792062 /* Build configuration list for PBXNativeTarget "PAPeekTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +429,7 @@
 				65D612C316A825FD00792062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
